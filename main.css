@@ -1,0 +1,12 @@
+
+/*buttons should be pink!*/
+.btn{
+    background-color: #FACDE6;
+    color:black;
+}
+
+/*--Main_headers in violet*/
+ 
+h1, h4 {
+    color: #805999;
+}
