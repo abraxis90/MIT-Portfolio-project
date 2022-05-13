@@ -3,6 +3,8 @@
 .btn{
     background-color: #FACDE6;
     color:black;
+    margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 /*--Main_headers in violet*/
@@ -24,6 +26,7 @@ h2{
 .carousel-inner{
     max-height: 280px;
 }
+
 
 /*id lists
 
