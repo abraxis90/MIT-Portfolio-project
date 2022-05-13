@@ -9,7 +9,10 @@
 
 /*--Main_headers in violet*/
  
-h1, h4 {
+h1{
+    color: #69467f;
+}
+h4 {
     color: #805999;
 }
 
