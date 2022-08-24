@@ -23,4 +23,14 @@ a, a:hover, a:focus, a:active {
     color: inherit;
     }
 
+.cat {
+    border-radius: 20px;
+    grid-column-gap: 5px;
+    gap : 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 24px;
+    box-sizing: border-box;
+}
+
 /* Grid layout codes are in the html as per bootstrap
