@@ -17,3 +17,8 @@ h2{
 h4 {
     color: #805999;
 }
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+    }
