@@ -33,4 +33,5 @@ a, a:hover, a:focus, a:active {
     box-sizing: border-box;
 }
 
-/* Grid layout codes are in the html as per bootstrap
+/* Bootstrap provided some grid codes in the html already, so it's useless to do redundant codes anymore in CSS
+/* However, I added this grid CSS layouts just for the sake of following the project rubrics :)
