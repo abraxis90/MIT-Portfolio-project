@@ -1,840 +1,935 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <!-- Yandex.Metrika counter -->
-      <script type="text/javascript" >
-      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-      var z = null;m[i].l=1*new Date();
-      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <script type="text/javascript">
+      (function(m, e, t, r, i, k, a) {
+        m[i] = m[i] || function() {
+          (m[i].a = m[i].a || []).push(arguments);
+        };
+        var z = null;
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
+            a);
+      })
+      (window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
 
-      ym(90109424, "init", {
-       clickmap:true,
-       trackLinks:true,
-       accurateTrackBounce:true,
-       webvisor:true,
-       ecommerce:"dataLayer"
-     });
+      ym(90109424, 'init', {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+        ecommerce: 'dataLayer'
+      });
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/90109424" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/90109424" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
     <!-- /Yandex.Metrika counter -->
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0XZLBW6ZG"></script>
     <script>
-       window.dataLayer = window.dataLayer || [];
-       function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
 
-        gtag('config', 'G-T0XZLBW6ZG');
-      </script>
- 
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+
+      gtag('config', 'G-T0XZLBW6ZG');
+    </script>
+
 
     <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
     />
-    <link href="main.css" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet"/>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
     ></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
     <title src="./images/mylovemishka.jpg">Kittycat Tech</title>
-    <link rel="icon" type="image/x-icon" href="/images/Mishka_Icon1.png" />
-  
-  </head>
-  <body>
-    <!--Name-->
+    <link rel="icon" type="image/x-icon" href="/images/Mishka_Icon1.png"/>
 
-    <div>
-      <!-- Nav Container-->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+</head>
+<body>
+<!--Name-->
+
+<div>
+    <!-- Nav Container-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="https://kittycat.tech" target="_blank" >Kittycat Tech</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html" target="_blank" >Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://learn.kittycat.tech" target="_blank"> Cute CheatSheets</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/MIT_project.html" target="_blank" >MIT Project</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/globalTeams.html" target="_blank" >Global Teams</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://medium.com/@kittycat.tech" target="_blank">Blog</a>
-              </li>
-            
-            </ul>
-            <form class="d-flex">
-              <a href="https://www.linkedin.com/in/kittycat/" 
-              target="_blank"  button class="btn btn-outline-warning" >
-                LinkedIn
-              </button> </a>
-            </form>
-            <form class="d-flex">
-              <a href="https://github.com/kittycat-tech" 
-              target="_blank"  button class="btn btn-outline-warning" >
-                Github meow
-              </button> </a>
-            </form>
-          </div>
+            <a class="navbar-brand" href="https://kittycat.tech" target="_blank">Kittycat Tech</a>
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html" target="_blank">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://learn.kittycat.tech" target="_blank"> Cute CheatSheets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/MIT_project.html" target="_blank">MIT Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/globalTeams.html" target="_blank">Global Teams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://medium.com/@kittycat.tech" target="_blank">Blog</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <a href="https://www.linkedin.com/in/kittycat/"
+                       target="_blank" button class="btn btn-outline-warning">
+                        LinkedIn
+                        </button> </a>
+                </form>
+                <form class="d-flex">
+                    <a href="https://github.com/kittycat-tech"
+                       target="_blank" button class="btn btn-outline-warning">
+                        Github meow
+                        </button> </a>
+                </form>
+            </div>
         </div>
-      </nav>
-    </div>
-    <!--Banner-->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
+    </nav>
+</div>
+<!--Banner-->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
         <img
-          src="./images/Erica_banner.png"
-          class="img-fluid"
-          alt="Erica Madebeykin : Investor | Co-founder | Software Developer. ’m Erica Madebeykin, a unique combination of an investor, a Co-founder and a software developer."
+                src="./images/Erica_banner.png"
+                class="img-fluid"
+                alt="Erica Madebeykin : Investor | Co-founder | Software Developer. ’m Erica Madebeykin, a unique combination of an investor, a Co-founder and a software developer."
         />
-      </div>
     </div>
+</div>
 
-    <!--endOfBanner-->
+<!--endOfBanner-->
 
-    <!-- Marketing messaging and featurettes
-      ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-    <!--Education-->
-    <!-- START THE Grid CSS  Bootstrap-->
-    <div class="container marketing">
-        <h1>Education</h1> 
-        <!-- Three columns of text below the carousel -->
-        <div class="row mt-2">
-          <div class="col-lg-4">
+<!-- Marketing messaging and featurettes
+  ================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+<!--Education-->
+<!-- START THE Grid CSS  Bootstrap-->
+<div class="container marketing">
+    <h1>Education</h1>
+    <!-- Three columns of text below the carousel -->
+    <div class="row mt-2">
+        <div class="col-lg-4">
             <img
-              class="img-fluid img-thumbnail"
-              src="./images/MIT_logo.png"
-              alt="MIT logo"
-              width="140"
-              height="140"
+                    class="img-fluid img-thumbnail"
+                    src="./images/MIT_logo.png"
+                    alt="MIT logo"
+                    width="140"
+                    height="140"
             />
             <h4>Massachusetts Institute of Technology</h4>
             <p>
-              Erica is a student in MIT's Professional Full Stack Certification.
-            <br>She is currently acquiring the golden skills of web development and designs,
-            as she fully transitioned to the executive operations in the Software Industry.
+                Erica is a student in MIT's Professional Full Stack Certification.
+                <br>She is currently acquiring the golden skills of web development and designs,
+                as she fully transitioned to the executive operations in the Software Industry.
             </p>
-          </div>
-          <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <img
-                class="img-fluid img-thumbnail"
-                src="./images/macquarie_logo_australia.png"
-                alt="Macquarie Graduate School of Managementlogo"
-                width="140"
-                height="140"
-              />
-              <h4>Macquarie University Business School</h4>
-              <p>
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img
+                    class="img-fluid img-thumbnail"
+                    src="./images/macquarie_logo_australia.png"
+                    alt="Macquarie Graduate School of Managementlogo"
+                    width="140"
+                    height="140"
+            />
+            <h4>Macquarie University Business School</h4>
+            <p>
                 Erica is a student of Global Master of Business Administration in
-                Macquarie University: a prestigious and world-class university in Australia. 
+                Macquarie University: a prestigious and world-class university in Australia.
                 <br>
                 This GMBA is focused on the Global Business Practice and expanding businesses to different continents.
-              </p>
-            </div>
-          <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <img
-                class="img-fluid img-thumbnail"
-                src="./images/google logo.jpeg"
-                alt="Google logo"
-                width="140"
-                height="140"
-              />
-              <h4>Google Professional Certifications
-              </h4>
-              <p>
-                Certified Google Digital Marketing and E-Commerce
-                <br>Google Project Management  
-                <br> Google IT Support 
-
-              </p>
-            </div>
-          <!-- /.col-lg-4 -->
-        </div>
-        <!-- /.row -->
-        <hr class="featurette-divider" />
-
-    <div class="row featurette">
-      <div class="row mt-2" id="github1">
-        <h1>Core Strengths</h1>
-        <div class="col-lg-4">
-          <img
-          class="rounded-circle"
-          src="./images/Global teams.jpg"
-          alt="Erica's global teams"
-          width="140"
-          height="140"
-        />
-        <h2>Global Community Builder</h2>
-        <p>
-         Erica is an expert in building global communities in Europe, Middle East and Asia.
-         She has an expertise of bridging cultural gaps and managing diverse cultures into a solid one global community.
-         <br>She generously funded global European trips, gave-away birthday gifts and awarded cash/Macbook Pro to her former employees and students.
-        </p>
-        <p>
-          <a class="btn btn-warning" href="https://www.instagram.com/p/CXuH-NZonyd/?hl=en" target="_blank" role="button "
-            > Team Germany- Winter Party &raquo;</a
-          >
-        </p>
-        <p>
-          <a class="btn btn-warning" href="https://www.instagram.com/p/CX_vBt6hjs1/?hl=en" target="_blank" role="button "
-            >Team Saudi-Pool Party(Riyadh)&raquo;</a
-          >
-        </p>
-        <p>
-          <a class="btn btn-warning" href="https://www.facebook.com/GermanLanguage.ph/posts/pfbid02iFioyhnbFm3Zg5m6XsBBcWHrhJSZq8gjaaNV3Gse4WFMDnpL9pW1feAvFy6b5uql" target="_blank"  role="button "
-            > Team Europe- School's European Travels &raquo;</a
-          >
-        </p>
-        <p>
-          <a class="btn btn-warning" href="https://www.instagram.com/p/CXWVLxIoy1C/?hl=en" target="_blank" role="button "
-            >Team Saudi-Pool Party(Jeddah)&raquo;</a
-          >
-        </p>
-        <p>
-          <a class="btn btn-warning" href="https://www.instagram.com/p/CXJC92EIc1O/?hl=en" target="_blank" role="button "
-            >Team Saudi-Pool Party(AK)&raquo;</a
-          >
-        </p>
-        <p>
-          <a class="btn btn-warning" href="https://www.instagram.com/p/CXTYJn5oK9g/?hl=en" target="_blank" role="button "
-            >Team Philippines- Beach Party&raquo;</a
-          >
-        </p>
-
-        <p>
-          <a class="btn btn-warning" href="https://www.facebook.com/GermanLanguage.ph/posts/pfbid0mv5ehRjhsd1itCv62J51Rs6Tn6soPqjcnH6YtNSTgqfHNd1ZWKHEFm653feNbQi9l" target="_blank" role="button "
-            >Team UAE- Cruise Party&raquo;</a
-          >
-        </p>
-        <p>
-          <a class="btn btn-warning" href="https://www.facebook.com/GermanLanguage.ph/posts/pfbid02xeuTN26Ew8qzfKzvaYgmB5LFsHWgGqkyUMLjWYfRw9qnxsYE3zmvr4bAXTSa4gJMl" target="_blank" role="button "
-            >Team Kuwait-Christmas Dinner&raquo;</a
-          >
-        </p>
-        <p>
-          <a class="btn btn-warning" href="https://www.instagram.com/p/CXa8OvRJq_z/?hl=en" target="_blank" role="button "
-            >Team Qatar-Christmas Dinner&raquo;</a
-          >
-        </p>
-        <p>
-          <a class="btn btn-warning" href="https://www.instagram.com/p/CXTXitaoV3G/?hl=en" target="_blank" role="button "
-            >former Employees Awarding Night&raquo;</a
-          >
-        </p>
-        
-        </div>
-        <!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img
-          class="rounded-circle"
-          src="./images/team2022.png"
-          alt="Generic placeholder image"
-          width="140"
-          height="140"
-        />
-        <h2> Business Manager for more than 10 years</h2>
-        <p>
-          <em>Business is her natural talent and genetically running in her blood. </em>
-          <br>Erica has 10+ years of experience in managing businesses, from junior manager up to a well-experienced C-level manager.
-         <br>
-         <br> At the age of <strong> 6,</strong> she loved the concept of sales and started making sales.     
-          <br> At the age of <strong> 12,</strong> she had the luck to meet a PH billionaire  whom later on inspired her to do business.    
-          <br> At the age of <strong> 17,</strong> she started managing her retail business.         
-          <br> At the age of <strong> 21,</strong> she was a corporate Sales General Manager for a Philippine corporation.
-          <br> At the age of <strong> 23,</strong> she successfully founded her own online German school and started her CEO career. Her business made more than million dollar sales from scratch.
-          <br> At the age of <strong> 27,</strong> she started coding and enrolled to MIT. She fully switched to Software Industry, managing her Ed-tech startup based in Cyprus, Europe.
-          <br>
-          <br>She also loves coding. She personally coded this website using Bootstrap, HTML and CSS. Currently coding her first web app in JS using React, Node and MongoDB.
-        </p>
-        <p>
-          <a class="btn btn-warning" href="https://germanlanguage.ph" target="_blank" role="button"
-            > Online German School &raquo;</a
-          >
-        </p>
-        <p>
-          <a class="btn btn-warning" href="https://blog.germanlanguage.ph/luz-ann-b2-passer-success-story/" target="_blank" role="button "
-            >Authentic Success story &raquo;</a
-          >
-        </p>
-        <p>
-          <a class="btn btn-warning" href="https://tappysoft.com" target="_blank" role="button "
-            > Cyprus-based Startup&raquo;</a
-          >
-        </p>
-        <p>
-          <a class="btn btn-warning" href="https://www.instagram.com/p/CIqUzxKl2Ni/?hl=en" target="_blank"  role="button "
-            > $20k+ Charity Donations&raquo;</a
-          >
-        </p>
-        <p>
-          <a class="btn btn-warning" href="https://coursera.org/share/b752c2b594b6ce34f4e064e532081a78" target="_blank" role="button "
-            > Google Certified&raquo;</a
-          >
-        </p>
-        </div>
-
-
-
-        <!--Github Projects Section-->
-         
-        <!--Core Expertise Section-->
-        <!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img
-          class="rounded-circle"
-          src="./images/business.jpg"
-          alt="Generic placeholder image"
-          width="140"
-          height="140"
-        />
-        <h2>Core Expertise: Global Business Management</h2>
-        <p>
-          Erica is a unique combinations of all these skill sets, which gives her the unique ability to
-          understand, create and execute things in her very unique way.
-          <br>Skill Sets acquired in her lifetime:
-          <br />
-        </p>
-        <p>
-          <a class="btn btn-outline-warning"  href="#executive" target="_blank"role="button "
-            >Executive Mgmt&raquo;</a>
-        </p>
-        <p>
-          <a class="btn btn-outline-warning"  href="#global" target="_blank" role="button " 
-            >Global Business Dev &raquo;</a>
-        </p>
-        <p>
-          <a class="btn btn-outline-warning"  href="#product-mgmt" target="_blank" role="button "
-            >Product Management &raquo;</a>
-        </p>
-        <p>
-          <a class="btn btn-outline-warning"  href="#sales" target="_blank" role="button " 
-            >Sales & Marketing&raquo;</a>
-        </p>
-        <p>
-          <a class="btn btn-outline-warning"  href="#smm" target="_blank" role="button "
-            >Social Media Marketing&raquo;</a>
-        </p>
-        <p>
-          <a class="btn btn-outline-warning"  href="#journalism" target="_blank" role="button "
-            >Journalism Background&raquo;</a>
-        </p>
-        <p>
-          <a class="btn btn-outline-warning"  href="#branding" target="_blank" role="button "
-            >Loyalty Branding&raquo;</a>
-        </p>
-        <p>
-          <a class="btn btn-outline-warning"  href="#teaching" target="_blank" role="button "
-            >Teaching Background&raquo;</a>
-        </p>
-
-         
-        
-        </div>
-        <!-- /.col-lg-4 -->
-      </div>
-      <div class="container marketing">
-        <h1>Github Projects</h1> 
-        <!-- Three columns of text below the carousel -->
-        <div class="row mt-2">
-          <div class="col-lg-4">
-            <a href="https://github.com/kittycat-tech/PacMen-Exercise" target="_blank" >
-            <img
-              class="img-fluid img-thumbnail"
-              src="./images/Pacman.png"
-              alt="PacMen Exercise"
-              width="140"
-              height="140"
-            /> </a>
-            <a href="https://github.com/kittycat-tech/PacMen-Exercise" target="_blank" > <h4>PacMen Exercise</h4> </a>
-            <p>
-              This is an activity about pac-men munching within the screen. 
-              <br>Create pacmen by pressing the "Add Pacman" button. When you press the “start game” button, you could see that the pacmen starts moving around. To stop the game, you’d have to refresh the page. Have some fun!
             </p>
-          </div>
-          <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <a href="https://github.com/kittycat-tech/Eye_Exercise" target="_blank" > 
-              <img
-                class="img-fluid img-thumbnail"
-                src="./images/eye.jpg"
-                alt="Eye Exercise"
-                width="140"
-                height="140"
-              /></a>
-              <a href="https://github.com/kittycat-tech/Eye_Exercise" target="_blank" > <h4>Eye Exercise</h4> </a>
-              <p>
-                This activity is about the eye movement simulation, which tracks your cursor as you move. Have fun playing with your cursor!
-
-            </div>
-          <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <a href="https://github.com/kittycat-tech/Real-Time-Bus-Tracking" target="_blank" > 
-              <img
-                class="img-fluid img-thumbnail"
-                src="./images/bus.jpg"
-                alt="Bus Tracker"
-                width="140"
-                height="140"
-              /> </a>
-              <a href="https://github.com/kittycat-tech/Real-Time-Bus-Tracking" target="_blank" > <h4> Real Time Bus Tracking
-              </h4> </a>
-              <p>
-                 This activity is about imitating a bus route from MIT to Harvard.
-                 In this activity, you could see the bus station route where the bus navigates.
-                 
-              </p>
-            </div>
-          <!-- /.col-lg-4 -->
-        </div>
-        <!-- /.row -->
-      <!-- /.row -->
-      <!-- Three columns of text below the carousel -->
-      <div class="row mt-2">
-        <h1>Unique Her</h1>
-        <div class="col-lg-4">
-          <img
-            class="rounded-circle"
-            src="./images/Mishka_Icon1.png"
-            alt="Generic placeholder image"
-            width="140"
-            height="140"
-          />
-          <h2> Software Dev</h2>
-          <p>
-            Free cute kitty++ CheatSheets for you!
-            <br />
-            Erica is a highly creative dev who loves learning, creating and sharing to the tech community. 
-            <br> She is obsessed with coding, designs, and cats 
-            which makes it naturally easy for her  to create cutie patootie Coding Cheatsheets.
-            <br>She originally started by crafting Kitty cheatsheets and now crafting Puppy cheatsheets too!
-          </p>
-          <p>
-            <a class="btn btn-warning" href="https://testimonial.to/kittycat-tech/all" target="_blank" role="button "
-              > What professionals say about her designs&raquo;</a
-            >
-          </p>
-          <p>
-            <a class="btn btn-warning" href="https://github.com/kittycat-tech?tab=repositories" target="_blank" role="button "
-              > Github Repositories &raquo;</a
-            >
-          </p>
-          <p>
-            <a class="btn btn-warning" href="#software-dev" target="_blank" role="button "
-              > Software dev& designs &raquo;</a
-            >
-          </p>
-
-
         </div>
         <!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img
-          class="rounded-circle"
-          src="./images/investment-pic-compressed.png"
-          alt="Generic placeholder image"
-          width="140"
-          height="140"
-        />
-        <h2>Investor</h2>
-        <p>
-          Erica with her family has been investing in stocks and tech for years.
-          Some of their past investments include shares in:
-        </p>
-        <p>
-          <a class="btn btn-warning" href="https://pancon.com.au/" target="_blank" role="button "
-            > Pancontinental (Australia)&raquo;</a
-          >
-        </p>
-        <p>
-        <a class="btn btn-warning" href="https://edudo.app" target="_blank" role="button "
-        > Edudo App (USA)&raquo;</a>
-       </p>
-       <p>
-        <a class="btn btn-warning" href="https://finance.yahoo.com/quote/YOW.AX?p=YOW.AX&.tsrc=fin-srch" target="_blank" role="button "
-        > Yowie (Australia) &raquo;</a>
-       </p>
-       <p>
-        <a class="btn btn-warning" href="https://finance.yahoo.com/quote/DMM.AX?p=DMM.AX&.tsrc=fin-srch" target="_blank" role="button "
-        > Dmc Mining (Australia)&raquo;</a>
-       </p>
-       <p>
-        <a class="btn btn-warning" href="https://finance.yahoo.com/quote/0P0001NBCW.HK?p=0P0001NBCW.HK&.tsrc=fin-srch" target="_blank" role="button "
-        > Tiger Brokers(Hongkong)&raquo;</a>
-       </p>
+            <img
+                    class="img-fluid img-thumbnail"
+                    src="./images/google logo.jpeg"
+                    alt="Google logo"
+                    width="140"
+                    height="140"
+            />
+            <h4>Google Professional Certifications
+            </h4>
+            <p>
+                Certified Google Digital Marketing and E-Commerce
+                <br>Google Project Management
+                <br> Google IT Support
 
-
-
-          
-        </div>
-
-
-
-        <!--Github Projects Section-->
-        <!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img
-            class="rounded-circle"
-            src="./images/chess logo.jpeg"
-            alt="Generic placeholder image"
-            width="140"
-            height="140"
-          />
-          <h2>Sports & Hobbies</h2>
-          <p>
-           <strong>Chess , Golf, Piano, Scrabble</strong>
-           <br>
-           Erica is originally a geek who played in the 6th World Scrabble Championship held at Malaysia representing her former country.
-           <br> She was also a straight Chess varsity from grade school up to her college days.
-           <br>Currently she is working on her Piano Collections and also plays golf during her spare time.
-          </p>
-          <p>
-            <a class="btn btn-outline-warning" href="http://www.youthscrabble.org/wysc2011/results/cericatablan.html" target="_blank" role="button "
-              >World Championship Scrabble&raquo;</a
-            >
-          </p>
-          <p>
-            <a class="btn btn-outline-warning" href="https://lichess.org/@/ericatech" target="_blank" role="button "
-              >liChess rate: 1774 &raquo;</a
-            >
-          </p>
-          <p>
-            <a class="btn btn-outline-warning" href="https://youtu.be/YkxUGSjW6PU" target="_blank" role="button "
-              >Piano Collections &raquo;</a
-            >
-          </p>
-          <p>
-            <a class="btn btn-outline-warning" href="https://youtube.com/shorts/hq-7jL9IGOU?feature=share" target="_blank"  role="button "
-              >Golf lover&raquo;</a
-            >
-          </p>
+            </p>
         </div>
         <!-- /.col-lg-4 -->
-      </div>
-      <!-- /.row -->
-      <div class="row featurette">
-        <!-- Three columns of text below the carousel -->
-  
-  
-
-      
-
-    <!-- Featurette Start Skill Set 1-->
-
-      <hr class="featurette-divider" />
-
-    
-      <div class="row featurette">
-        <div class="col-md-7 order-md-1 order-sm-2">
-          <h2 class="featurette-heading" id="software-dev">
-            Software Development and Designs
-            <br>
-            <span class="text-muted"> Skill Set 1</span>
-          </h2>
-          <p class="lead">
-            <strong>Programming Languages:</strong>
-            JavaScript | HTML | CSS | Python
-            <br>
-            <strong> Frameworks </strong>: React| Node.js | Bootstrap | MongoDB
-            <br>
-            <strong> Technologies:</strong> Git| Figma| Notion
-          </p>
-        </div>
-        <div class="col-md-5">
-
-        </div>
-      </div>
-      <!--Skill Set 2-->
-      <hr class="featurette-divider" />
-      <div class="row featurette">
-        <div class="col-md-7 order-md-1 order-sm-2">
-          <h2 class="featurette-heading" id="executive">
-            Executive Management
-            <br>
-            <span class="text-muted"> Skill Set 2</span>
-          </h2>
-          <p>
-            <strong>Executive Core:</strong>
-            During her leadership as the former CEO of Armenian-based company Germanlanguage.ph LLC, her global team (30+members of Germans, Russians, and other nationalities) managed to span the company service in more than 11 countries, 900+ students across the globe (different nationalities).
-            <br>She established a self-sustaining business from zero to something, achieving its first AUD 1M gross sales in 2 years of full operation (without outside investor). She successfully led her global team (100% remote) in pioneering several unique services in their field's niche.
-            <br> She is just currently resting as a CEO but would definitely go back on Executive operations (this time in tech industry) after she finish her studies.
-          </p>
-        </div>
-        <div class="col-md-5 order-md-1">
-
-        </div>
-      </div>
     </div>
-    <!-- Business Skill Set 3 -->
-
-    <hr class="featurette-divider" />
-
+    <!-- /.row -->
+    <hr class="featurette-divider"/>
 
     <div class="row featurette">
-      <div class="col-md-7 order-md-1 order-sm-2">
-        <h2 class="featurette-heading" id="global">
-          Global Business Development
-          <br>
-          <span class="text-muted"> Skill Set 3</span>
-        </h2>
-        <p>
-          <strong>Global Business Dev Tasks:</strong>
-         <br> *Handled all the business meetings and negotiations with the owners, legal directors, and executives of companies in Germany, Switzerland, and the Philippines corporations.
-         <br>*Established and build collaborations with European companies in Germany and Switzerland.
-         <br>*Provided business solutions that suggests win-win solution for all parties.
-         <br> *Delegated subtasks to employees and supervised the daily operations between our employees to employees of collaborating companies
-         <br>*Helped to fix the huge cultural gaps between the Asian and European markets, making the business possible.
+        <div class="row mt-2" id="github1">
+            <h1>Core Strengths</h1>
+            <div class="col-lg-4">
+                <img
+                        class="rounded-circle"
+                        src="./images/Global teams.jpg"
+                        alt="Erica's global teams"
+                        width="140"
+                        height="140"
+                />
+                <h2>Global Community Builder</h2>
+                <p>
+                    Erica is an expert in building global communities in Europe, Middle East and Asia.
+                    She has an expertise of bridging cultural gaps and managing diverse cultures into a solid one global
+                    community.
+                    <br>She generously funded global European trips, gave-away birthday gifts and awarded cash/Macbook
+                    Pro to her former employees and students.
+                </p>
+                <p>
+                    <a class="btn btn-warning" href="https://www.instagram.com/p/CXuH-NZonyd/?hl=en" target="_blank"
+                       role="button "
+                    > Team Germany- Winter Party &raquo;</a
+                    >
+                </p>
+                <p>
+                    <a class="btn btn-warning" href="https://www.instagram.com/p/CX_vBt6hjs1/?hl=en" target="_blank"
+                       role="button "
+                    >Team Saudi-Pool Party(Riyadh)&raquo;</a
+                    >
+                </p>
+                <p>
+                    <a class="btn btn-warning"
+                       href="https://www.facebook.com/GermanLanguage.ph/posts/pfbid02iFioyhnbFm3Zg5m6XsBBcWHrhJSZq8gjaaNV3Gse4WFMDnpL9pW1feAvFy6b5uql"
+                       target="_blank" role="button "
+                    > Team Europe- School's European Travels &raquo;</a
+                    >
+                </p>
+                <p>
+                    <a class="btn btn-warning" href="https://www.instagram.com/p/CXWVLxIoy1C/?hl=en" target="_blank"
+                       role="button "
+                    >Team Saudi-Pool Party(Jeddah)&raquo;</a
+                    >
+                </p>
+                <p>
+                    <a class="btn btn-warning" href="https://www.instagram.com/p/CXJC92EIc1O/?hl=en" target="_blank"
+                       role="button "
+                    >Team Saudi-Pool Party(AK)&raquo;</a
+                    >
+                </p>
+                <p>
+                    <a class="btn btn-warning" href="https://www.instagram.com/p/CXTYJn5oK9g/?hl=en" target="_blank"
+                       role="button "
+                    >Team Philippines- Beach Party&raquo;</a
+                    >
+                </p>
 
-         <br> <strong>Our Employees’ Ethnicities:</strong>
-          German || Russian || French || American || Swiss || Australian || Filipino || Belarusian 
-          <br>
-          <strong> B2B Clients :</strong>
-          Swiss AG Company || German GmbH Companies || Philippines Corporation
-          <br>
-          <strong> B2C Clients’ Ethnicities: </strong>
-          Filipino || Eritrean || Sudanese || Indian || Jordanian || Arabian || Serbian 
+                <p>
+                    <a class="btn btn-warning"
+                       href="https://www.facebook.com/GermanLanguage.ph/posts/pfbid0mv5ehRjhsd1itCv62J51Rs6Tn6soPqjcnH6YtNSTgqfHNd1ZWKHEFm653feNbQi9l"
+                       target="_blank" role="button "
+                    >Team UAE- Cruise Party&raquo;</a
+                    >
+                </p>
+                <p>
+                    <a class="btn btn-warning"
+                       href="https://www.facebook.com/GermanLanguage.ph/posts/pfbid02xeuTN26Ew8qzfKzvaYgmB5LFsHWgGqkyUMLjWYfRw9qnxsYE3zmvr4bAXTSa4gJMl"
+                       target="_blank" role="button "
+                    >Team Kuwait-Christmas Dinner&raquo;</a
+                    >
+                </p>
+                <p>
+                    <a class="btn btn-warning" href="https://www.instagram.com/p/CXa8OvRJq_z/?hl=en" target="_blank"
+                       role="button "
+                    >Team Qatar-Christmas Dinner&raquo;</a
+                    >
+                </p>
+                <p>
+                    <a class="btn btn-warning" href="https://www.instagram.com/p/CXTXitaoV3G/?hl=en" target="_blank"
+                       role="button "
+                    >former Employees Awarding Night&raquo;</a
+                    >
+                </p>
 
-          <br><strong>Countries we reached:</strong>
-          Saudi Arabia | UAE | Kuwait | Qatar | Bahrain | Oman | Singapore | Thailand | Brunei |Philippines | Canada |Germany | Serbia
-          <br>
-         
-        </p>
-      </div>
-      <div class="col-md-5">
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img
+                        class="rounded-circle"
+                        src="./images/team2022.png"
+                        alt="Generic placeholder image"
+                        width="140"
+                        height="140"
+                />
+                <h2> Business Manager for more than 10 years</h2>
+                <p>
+                    <em>Business is her natural talent and genetically running in her blood. </em>
+                    <br>Erica has 10+ years of experience in managing businesses, from junior manager up to a
+                    well-experienced C-level manager.
+                    <br>
+                    <br> At the age of <strong> 6,</strong> she loved the concept of sales and started making sales.
+                    <br> At the age of <strong> 12,</strong> she had the luck to meet a PH billionaire whom later on
+                    inspired her to do business.
+                    <br> At the age of <strong> 17,</strong> she started managing her retail business.
+                    <br> At the age of <strong> 21,</strong> she was a corporate Sales General Manager for a Philippine
+                    corporation.
+                    <br> At the age of <strong> 23,</strong> she successfully founded her own online German school and
+                    started her CEO career. Her business made more than million dollar sales from scratch.
+                    <br> At the age of <strong> 27,</strong> she started coding and enrolled to MIT. She fully switched
+                    to Software Industry, managing her Ed-tech startup based in Cyprus, Europe.
+                    <br>
+                    <br>She also loves coding. She personally coded this website using Bootstrap, HTML and CSS.
+                    Currently coding her first web app in JS using React, Node and MongoDB.
+                </p>
+                <p>
+                    <a class="btn btn-warning" href="https://germanlanguage.ph" target="_blank" role="button"
+                    > Online German School &raquo;</a
+                    >
+                </p>
+                <p>
+                    <a class="btn btn-warning" href="https://blog.germanlanguage.ph/luz-ann-b2-passer-success-story/"
+                       target="_blank" role="button "
+                    >Authentic Success story &raquo;</a
+                    >
+                </p>
+                <p>
+                    <a class="btn btn-warning" href="https://tappysoft.com" target="_blank" role="button "
+                    > Cyprus-based Startup&raquo;</a
+                    >
+                </p>
+                <p>
+                    <a class="btn btn-warning" href="https://www.instagram.com/p/CIqUzxKl2Ni/?hl=en" target="_blank"
+                       role="button "
+                    > $20k+ Charity Donations&raquo;</a
+                    >
+                </p>
+                <p>
+                    <a class="btn btn-warning" href="https://coursera.org/share/b752c2b594b6ce34f4e064e532081a78"
+                       target="_blank" role="button "
+                    > Google Certified&raquo;</a
+                    >
+                </p>
+            </div>
 
-      </div>
-    </div>
-    <!--Business Skill Set 4-->
-    <hr class="featurette-divider" />
 
-    <div class="row featurette">
-      <div class="col-md-7 order-md-1 order-sm-2">
-        <h2 class="featurette-heading" id="product-mgmt">
-          Product Management 
-        <br> <span class="text-muted"> Skill Set 4</span>
-        </h2>
-        <p>
-          *Came up with different product-market fits for different customers/clients
-        <br> *Updated and improved the product/services regularly, with respect to the different cultures, geographical locations, and profiles of our customers/ clients
-        <br>  *Managed the cross-functional teams to deliver the services needed from time to time 
-        <br> *Cross-Functional Teams:
-        <br> 1) Russian Team of Project Manager, Software Engineers with UX/UI Designers and Illustrators(TappySoft Team, I covered only a small part of management with this team)
-          <br>  Full management:
-          <br>2) German Team of Academics for creating, modifying, and implementing the products/ services
-          <br>3) Customer Support Team (Remote) for handling inquiries, explaining the products, and assisting with payments.
-          <br>4) Marketing Team for implementing the promotion of the products/services
-          <br>5) Scholarship Team for integrating scholarship and managing collaborations with the German sponsors
-          <br>6) Retention Team for retaining the high quality of the service and managing the customer's feedbacks
-          <br> 7) Vendors for arranging the tangible products that we offer to our students
-          <br> >A final decision-maker on some minor projects proposed by the project managers in different teams; Pre-approved the budget and scope of projects, presented by the project managers.
-          <br> >Always coordinated with the legal director who is the final decision-maker for critical decisions and major finance related matters.
-        </p>
-      </div>
-      <div class="col-md-5 order-md-1">
+            <!--Github Projects Section-->
 
-      </div>
-    </div>
-      <!-- Featurette Start Skill Set 5-->
+            <!--Core Expertise Section-->
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img
+                        class="rounded-circle"
+                        src="./images/business.jpg"
+                        alt="Generic placeholder image"
+                        width="140"
+                        height="140"
+                />
+                <h2>Core Expertise: Global Business Management</h2>
+                <p>
+                    Erica is a unique combinations of all these skill sets, which gives her the unique ability to
+                    understand, create and execute things in her very unique way.
+                    <br>Skill Sets acquired in her lifetime:
+                    <br/>
+                </p>
+                <p>
+                    <a class="btn btn-outline-warning" href="#executive" target="_blank" role="button "
+                    >Executive Mgmt&raquo;</a>
+                </p>
+                <p>
+                    <a class="btn btn-outline-warning" href="#global" target="_blank" role="button "
+                    >Global Business Dev &raquo;</a>
+                </p>
+                <p>
+                    <a class="btn btn-outline-warning" href="#product-mgmt" target="_blank" role="button "
+                    >Product Management &raquo;</a>
+                </p>
+                <p>
+                    <a class="btn btn-outline-warning" href="#sales" target="_blank" role="button "
+                    >Sales & Marketing&raquo;</a>
+                </p>
+                <p>
+                    <a class="btn btn-outline-warning" href="#smm" target="_blank" role="button "
+                    >Social Media Marketing&raquo;</a>
+                </p>
+                <p>
+                    <a class="btn btn-outline-warning" href="#journalism" target="_blank" role="button "
+                    >Journalism Background&raquo;</a>
+                </p>
+                <p>
+                    <a class="btn btn-outline-warning" href="#branding" target="_blank" role="button "
+                    >Loyalty Branding&raquo;</a>
+                </p>
+                <p>
+                    <a class="btn btn-outline-warning" href="#teaching" target="_blank" role="button "
+                    >Teaching Background&raquo;</a>
+                </p>
 
-      <hr class="featurette-divider" />
 
-
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2 order-sm-2">
-          <h2 class="featurette-heading" id="sales">
-            General Sales and Marketing
-            <br>
-            <span class="text-muted"> Skill Set 5</span>
-          </h2>
-          <p>
-            *Gross Sales: Achieved the first AU$ 1M gross sale in 2 years span, full bootstrap
-          <br>  *Marketing Team Management: Managed a whole team consisting of project manager, illustrators, and designers (during 2020 and 2021)
-          <br>  *Marketing Revenue: Produced an average of 1:5 ratio for CPA versus profit. 
-          <br>  *Marketing Materials: Produced several creative marketing materials such as gazettes, ads postings, etc.
-          <br>  *Overall Marketing Brain: Came up with at least 70% of the all the highly creative marketing ideas, strategies and implementations that boosted the sales and grew the company from zero to more than a million AUD sales (and counting).
-          </p>
+            </div>
+            <!-- /.col-lg-4 -->
         </div>
-        <div class="col-md-5">
+        <div class="container marketing">
+            <h1>Github Projects</h1>
+            <!-- Three columns of text below the carousel -->
+            <div class="row mt-2">
+                <div class="col-lg-4">
+                    <a href="https://github.com/kittycat-tech/PacMen-Exercise" target="_blank">
+                        <img
+                                class="img-fluid img-thumbnail"
+                                src="./images/Pacman.png"
+                                alt="PacMen Exercise"
+                                width="140"
+                                height="140"
+                        /> </a>
+                    <a href="https://github.com/kittycat-tech/PacMen-Exercise" target="_blank"><h4>PacMen Exercise</h4>
+                    </a>
+                    <p>
+                        This is an activity about pac-men munching within the screen.
+                        <br>Create pacmen by pressing the "Add Pacman" button. When you press the “start game” button,
+                        you could see that the pacmen starts moving around. To stop the game, you’d have to refresh the
+                        page. Have some fun!
+                    </p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <a href="https://github.com/kittycat-tech/Eye_Exercise" target="_blank">
+                        <img
+                                class="img-fluid img-thumbnail"
+                                src="./images/eye.jpg"
+                                alt="Eye Exercise"
+                                width="140"
+                                height="140"
+                        /></a>
+                    <a href="https://github.com/kittycat-tech/Eye_Exercise" target="_blank"><h4>Eye Exercise</h4></a>
+                    <p>
+                        This activity is about the eye movement simulation, which tracks your cursor as you move. Have
+                        fun playing with your cursor!
+
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <a href="https://github.com/kittycat-tech/Real-Time-Bus-Tracking" target="_blank">
+                        <img
+                                class="img-fluid img-thumbnail"
+                                src="./images/bus.jpg"
+                                alt="Bus Tracker"
+                                width="140"
+                                height="140"
+                        /> </a>
+                    <a href="https://github.com/kittycat-tech/Real-Time-Bus-Tracking" target="_blank"><h4> Real Time Bus
+                        Tracking
+                    </h4></a>
+                    <p>
+                        This activity is about imitating a bus route from MIT to Harvard.
+                        In this activity, you could see the bus station route where the bus navigates.
+
+                    </p>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+            <!-- /.row -->
+            <!-- Three columns of text below the carousel -->
+            <div class="row mt-2">
+                <h1>Unique Her</h1>
+                <div class="col-lg-4">
+                    <img
+                            class="rounded-circle"
+                            src="./images/Mishka_Icon1.png"
+                            alt="Generic placeholder image"
+                            width="140"
+                            height="140"
+                    />
+                    <h2> Software Dev</h2>
+                    <p>
+                        Free cute kitty++ CheatSheets for you!
+                        <br/>
+                        Erica is a highly creative dev who loves learning, creating and sharing to the tech community.
+                        <br> She is obsessed with coding, designs, and cats
+                        which makes it naturally easy for her to create cutie patootie Coding Cheatsheets.
+                        <br>She originally started by crafting Kitty cheatsheets and now crafting Puppy cheatsheets too!
+                    </p>
+                    <p>
+                        <a class="btn btn-warning" href="https://testimonial.to/kittycat-tech/all" target="_blank"
+                           role="button "
+                        > What professionals say about her designs&raquo;</a
+                        >
+                    </p>
+                    <p>
+                        <a class="btn btn-warning" href="https://github.com/kittycat-tech?tab=repositories"
+                           target="_blank" role="button "
+                        > Github Repositories &raquo;</a
+                        >
+                    </p>
+                    <p>
+                        <a class="btn btn-warning" href="#software-dev" target="_blank" role="button "
+                        > Software dev& designs &raquo;</a
+                        >
+                    </p>
+
+
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img
+                            class="rounded-circle"
+                            src="./images/investment-pic-compressed.png"
+                            alt="Generic placeholder image"
+                            width="140"
+                            height="140"
+                    />
+                    <h2>Investor</h2>
+                    <p>
+                        Erica with her family has been investing in stocks and tech for years.
+                        Some of their past investments include shares in:
+                    </p>
+                    <p>
+                        <a class="btn btn-warning" href="https://pancon.com.au/" target="_blank" role="button "
+                        > Pancontinental (Australia)&raquo;</a
+                        >
+                    </p>
+                    <p>
+                        <a class="btn btn-warning" href="https://edudo.app" target="_blank" role="button "
+                        > Edudo App (USA)&raquo;</a>
+                    </p>
+                    <p>
+                        <a class="btn btn-warning" href="https://finance.yahoo.com/quote/YOW.AX?p=YOW.AX&.tsrc=fin-srch"
+                           target="_blank" role="button "
+                        > Yowie (Australia) &raquo;</a>
+                    </p>
+                    <p>
+                        <a class="btn btn-warning" href="https://finance.yahoo.com/quote/DMM.AX?p=DMM.AX&.tsrc=fin-srch"
+                           target="_blank" role="button "
+                        > Dmc Mining (Australia)&raquo;</a>
+                    </p>
+                    <p>
+                        <a class="btn btn-warning"
+                           href="https://finance.yahoo.com/quote/0P0001NBCW.HK?p=0P0001NBCW.HK&.tsrc=fin-srch"
+                           target="_blank" role="button "
+                        > Tiger Brokers(Hongkong)&raquo;</a>
+                    </p>
+
+
+                </div>
+
+
+                <!--Github Projects Section-->
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img
+                            class="rounded-circle"
+                            src="./images/chess logo.jpeg"
+                            alt="Generic placeholder image"
+                            width="140"
+                            height="140"
+                    />
+                    <h2>Sports & Hobbies</h2>
+                    <p>
+                        <strong>Chess , Golf, Piano, Scrabble</strong>
+                        <br>
+                        Erica is originally a geek who played in the 6th World Scrabble Championship held at Malaysia
+                        representing her former country.
+                        <br> She was also a straight Chess varsity from grade school up to her college days.
+                        <br>Currently she is working on her Piano Collections and also plays golf during her spare time.
+                    </p>
+                    <p>
+                        <a class="btn btn-outline-warning"
+                           href="http://www.youthscrabble.org/wysc2011/results/cericatablan.html" target="_blank"
+                           role="button "
+                        >World Championship Scrabble&raquo;</a
+                        >
+                    </p>
+                    <p>
+                        <a class="btn btn-outline-warning" href="https://lichess.org/@/ericatech" target="_blank"
+                           role="button "
+                        >liChess rate: 1774 &raquo;</a
+                        >
+                    </p>
+                    <p>
+                        <a class="btn btn-outline-warning" href="https://youtu.be/YkxUGSjW6PU" target="_blank"
+                           role="button "
+                        >Piano Collections &raquo;</a
+                        >
+                    </p>
+                    <p>
+                        <a class="btn btn-outline-warning" href="https://youtube.com/shorts/hq-7jL9IGOU?feature=share"
+                           target="_blank" role="button "
+                        >Golf lover&raquo;</a
+                        >
+                    </p>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+            <div class="row featurette">
+                <!-- Three columns of text below the carousel -->
+
+
+                <!-- Featurette Start Skill Set 1-->
+
+                <hr class="featurette-divider"/>
+
+
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-1 order-sm-2">
+                        <h2 class="featurette-heading" id="software-dev">
+                            Software Development and Designs
+                            <br>
+                            <span class="text-muted"> Skill Set 1</span>
+                        </h2>
+                        <p class="lead">
+                            <strong>Programming Languages:</strong>
+                            JavaScript | HTML | CSS | Python
+                            <br>
+                            <strong> Frameworks </strong>: React| Node.js | Bootstrap | MongoDB
+                            <br>
+                            <strong> Technologies:</strong> Git| Figma| Notion
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+
+                    </div>
+                </div>
+                <!--Skill Set 2-->
+                <hr class="featurette-divider"/>
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-1 order-sm-2">
+                        <h2 class="featurette-heading" id="executive">
+                            Executive Management
+                            <br>
+                            <span class="text-muted"> Skill Set 2</span>
+                        </h2>
+                        <p>
+                            <strong>Executive Core:</strong>
+                            During her leadership as the former CEO of Armenian-based company Germanlanguage.ph LLC, her
+                            global team (30+members of Germans, Russians, and other nationalities) managed to span the
+                            company service in more than 11 countries, 900+ students across the globe (different
+                            nationalities).
+                            <br>She established a self-sustaining business from zero to something, achieving its first
+                            AUD 1M gross sales in 2 years of full operation (without outside investor). She successfully
+                            led her global team (100% remote) in pioneering several unique services in their field's
+                            niche.
+                            <br> She is just currently resting as a CEO but would definitely go back on Executive
+                            operations (this time in tech industry) after she finish her studies.
+                        </p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+
+                    </div>
+                </div>
+            </div>
+            <!-- Business Skill Set 3 -->
+
+            <hr class="featurette-divider"/>
+
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-1 order-sm-2">
+                    <h2 class="featurette-heading" id="global">
+                        Global Business Development
+                        <br>
+                        <span class="text-muted"> Skill Set 3</span>
+                    </h2>
+                    <p>
+                        <strong>Global Business Dev Tasks:</strong>
+                        <br> *Handled all the business meetings and negotiations with the owners, legal directors, and
+                        executives of companies in Germany, Switzerland, and the Philippines corporations.
+                        <br>*Established and build collaborations with European companies in Germany and Switzerland.
+                        <br>*Provided business solutions that suggests win-win solution for all parties.
+                        <br> *Delegated subtasks to employees and supervised the daily operations between our employees
+                        to employees of collaborating companies
+                        <br>*Helped to fix the huge cultural gaps between the Asian and European markets, making the
+                        business possible.
+
+                        <br> <strong>Our Employees’ Ethnicities:</strong>
+                        German || Russian || French || American || Swiss || Australian || Filipino || Belarusian
+                        <br>
+                        <strong> B2B Clients :</strong>
+                        Swiss AG Company || German GmbH Companies || Philippines Corporation
+                        <br>
+                        <strong> B2C Clients’ Ethnicities: </strong>
+                        Filipino || Eritrean || Sudanese || Indian || Jordanian || Arabian || Serbian
+
+                        <br><strong>Countries we reached:</strong>
+                        Saudi Arabia | UAE | Kuwait | Qatar | Bahrain | Oman | Singapore | Thailand | Brunei
+                        |Philippines | Canada |Germany | Serbia
+                        <br>
+
+                    </p>
+                </div>
+                <div class="col-md-5">
+
+                </div>
+            </div>
+            <!--Business Skill Set 4-->
+            <hr class="featurette-divider"/>
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-1 order-sm-2">
+                    <h2 class="featurette-heading" id="product-mgmt">
+                        Product Management
+                        <br> <span class="text-muted"> Skill Set 4</span>
+                    </h2>
+                    <p>
+                        *Came up with different product-market fits for different customers/clients
+                        <br> *Updated and improved the product/services regularly, with respect to the different
+                        cultures, geographical locations, and profiles of our customers/ clients
+                        <br> *Managed the cross-functional teams to deliver the services needed from time to time
+                        <br> *Cross-Functional Teams:
+                        <br> 1) Russian Team of Project Manager, Software Engineers with UX/UI Designers and
+                        Illustrators(TappySoft Team, I covered only a small part of management with this team)
+                        <br> Full management:
+                        <br>2) German Team of Academics for creating, modifying, and implementing the products/ services
+                        <br>3) Customer Support Team (Remote) for handling inquiries, explaining the products, and
+                        assisting with payments.
+                        <br>4) Marketing Team for implementing the promotion of the products/services
+                        <br>5) Scholarship Team for integrating scholarship and managing collaborations with the German
+                        sponsors
+                        <br>6) Retention Team for retaining the high quality of the service and managing the customer's
+                        feedbacks
+                        <br> 7) Vendors for arranging the tangible products that we offer to our students
+                        <br> >A final decision-maker on some minor projects proposed by the project managers in
+                        different teams; Pre-approved the budget and scope of projects, presented by the project
+                        managers.
+                        <br> >Always coordinated with the legal director who is the final decision-maker for critical
+                        decisions and major finance related matters.
+                    </p>
+                </div>
+                <div class="col-md-5 order-md-1">
+
+                </div>
+            </div>
+            <!-- Featurette Start Skill Set 5-->
+
+            <hr class="featurette-divider"/>
+
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2 order-sm-2">
+                    <h2 class="featurette-heading" id="sales">
+                        General Sales and Marketing
+                        <br>
+                        <span class="text-muted"> Skill Set 5</span>
+                    </h2>
+                    <p>
+                        *Gross Sales: Achieved the first AU$ 1M gross sale in 2 years span, full bootstrap
+                        <br> *Marketing Team Management: Managed a whole team consisting of project manager,
+                        illustrators, and designers (during 2020 and 2021)
+                        <br> *Marketing Revenue: Produced an average of 1:5 ratio for CPA versus profit.
+                        <br> *Marketing Materials: Produced several creative marketing materials such as gazettes, ads
+                        postings, etc.
+                        <br> *Overall Marketing Brain: Came up with at least 70% of the all the highly creative
+                        marketing ideas, strategies and implementations that boosted the sales and grew the company from
+                        zero to more than a million AUD sales (and counting).
+                    </p>
+                </div>
+                <div class="col-md-5">
+
+                </div>
+            </div>
+            <!--Skill Set 6-->
+            <hr class="featurette-divider"/>
+            <div class="row featurette">
+                <div class="col-md-7 order-md-1 order-sm-2">
+                    <h2 class="featurette-heading" id="smm">
+                        Social Media Marketing
+                        <br>
+                        <span class="text-muted"> Skill Set 6</span>
+                    </h2>
+                    <p>
+                        <br>*Promotional Materials: Highly creative to come up with ideas and edit the promotional
+                        materials
+                        <br>*Digital Marketing: Achieved more than 70k Fb Page likes and followers; 5k+ Fb group members
+                        <br>*Content Marketing: Achieved hundreds of thousands of likes (if combined) for the contents
+                        posted and boosted in the Facebook Account.
+                        Also achieved millions of empressions (in total) for boosted posts.
+                        <br>*Google Certified
+                    </p>
+                </div>
+                <div class="col-md-5 order-md-1">
+
+                </div>
+            </div>
+
+            <!-- Featurette Start Skill Set 7-->
+
+            <hr class="featurette-divider"/>
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2 order-sm-2">
+                    <h2 class="featurette-heading" id="community">
+                        Global Community Building
+                        <br>
+                        <span class="text-muted"> Skill Set 7</span>
+                    </h2>
+                    <p>
+                        <strong> Soft Skills </strong>
+                        <br> Global Leadership | Negotiation | Networking | Organizational Skills| Outsourcing |
+                        Campaigns
+                        <br> <strong>Community built in past company:</strong>
+                        <br>Team Germany| Team Philippines | Team UAE | Team Qatar | Team Kuwait
+                        <br>
+                        <strong> Teams in Saudi Arabia: </strong>
+                        <br> Team Jeddah | Team Riyadh| Team Al Khobar
+                    </p>
+                </div>
+                <div class="col-md-5 order-md-1">
+
+                </div>
+
+
+            </div>
+            <!--Skill Set 8-->
+            <hr class="featurette-divider"/>
+            <div class="row featurette">
+                <div class="col-md-7 order-md-1 order-sm-2">
+                    <!-- TODO: warning! duplicate id execttive; you can only use the same id once-->
+                    <h2 class="featurette-heading" id="executive">
+                        Loyalty & Branding
+                        <br>
+                        <span class="text-muted"> Skill Set 8</span>
+                    </h2>
+                    <p>
+                        <strong>Planning: </strong>
+                        Came up with various successful branding ideas that helped on speeding the growth of the company
+                        <br> <strong>Implementation: </strong>
+                        Spearheaded the overview of the production and managed the costings/ROI
+                        <br> <strong>Result: </strong>
+                        Achieved the expected ROI, produced 70k+ brand followers
+                        <br> <strong>Sales:</strong>
+                        Boosted by 40% from 2020 to 2021
+                        <br> <strong>Branding Merchandise</strong>
+                        Produced branded merchandise that greatly helped the retention and brand loyalty
+                    </p>
+                </div>
+                <div class="col-md-5 order-md-1">
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Featurette Start Skill Set 9-->
+
+        <hr class="featurette-divider"/>
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2 order-sm-2">
+                <h2 class="featurette-heading" id="journalism">
+                    Journalism Background
+                    <br>
+                    <span class="text-muted"> Skill Set 9</span>
+                </h2>
+                <p>
+                    <strong>Skills:</strong> Feature Writing | Story Telling | Publication designs and layouting
+                    <br>
+                    Erica grew up writing Feature articles for her highschool's and grade school's publication.
+                    <br> She was also winning city competitions for Feature writing and loved it when her article is at
+                    the center page of the school's newspaper.
+                    <br> Journalism has always been in her heart since childhood.
+                </p>
+            </div>
+            <div class="col-md-5">
+
+            </div>
+        </div>
+        <!--Skill Set 10-->
+        <hr class="featurette-divider"/>
+        <div class="row featurette">
+            <div class="col-md-7 order-md-1 order-sm-2">
+                <h2 class="featurette-heading" id="teaching">
+                    Teaching Background
+                    <br>
+                    <span class="text-muted"> Skill Set 10</span>
+                </h2>
+                <p>
+                    <br> <strong>Teaching Background</strong>
+                    During her geek younger years, Erica has always been fond of sharing her knowledge to others. She
+                    was a type A+ of student and former government scholar who did excel both in academics and
+                    non-academics curricular activities.
+                    <br> She was a private tutor for children, her classmates and other individuals who asked for her
+                    support. In times of needs (when professor was sick, etc.), she used to substitute some of her
+                    professors to handle specific topics for class discussions.
+                    <br> <strong>Basic Instructional Designs</strong>
+                    <br> Her younger years as temporary substitute for her former professors/teachers had exposed her to
+                    lesson plans and exam material preparations. Her former teachers had taught her how to draft lesson
+                    plans, craft exam materials and how to handle some specific behavioural learning patterns of their
+                    students.
+                    <br> <strong>Founding online tutorial schools</strong>
+                    <br>This teaching background and her passion in sharing high quality education have helped her
+                    understand the fundamentals
+                    of instructional designs, which later on became one of her building blocks on successfully
+                    establishing her own German school that had a total of 50-100 employees&contractors within 4 yrs of
+                    its operation.
+                </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+
+            </div>
 
         </div>
-      </div>
-      <!--Skill Set 6-->
-      <hr class="featurette-divider" />
-      <div class="row featurette">
-        <div class="col-md-7 order-md-1 order-sm-2">
-          <h2 class="featurette-heading" id="smm">
-            Social Media Marketing
-            <br>
-            <span class="text-muted"> Skill Set 6</span>
-          </h2>
-          <p>
-          <br>*Promotional Materials: Highly creative to come up with ideas and edit the promotional materials
-          <br>*Digital Marketing: Achieved more than 70k Fb Page likes and followers; 5k+ Fb group members
-          <br>*Content Marketing: Achieved hundreds of thousands of likes (if combined) for the contents posted and boosted in the Facebook Account. 
-              Also achieved millions of empressions (in total) for boosted posts.            
-          <br>*Google Certified
-          </p>
-        </div>
-        <div class="col-md-5 order-md-1">
 
-        </div>
-      </div>
-  
-      <!-- Featurette Start Skill Set 7-->
-
-      <hr class="featurette-divider" />
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2 order-sm-2">
-          <h2 class="featurette-heading" id="community">
-            Global Community Building
-            <br>
-            <span class="text-muted"> Skill Set 7</span>
-          </h2>
-          <p>
-            <strong> Soft Skills </strong>
-            <br> Global Leadership | Negotiation | Networking | Organizational Skills| Outsourcing | Campaigns
-            <br> <strong>Community built in past company:</strong>
-            <br>Team Germany| Team Philippines | Team UAE | Team Qatar | Team Kuwait
-            <br>
-            <strong> Teams in Saudi Arabia: </strong>
-            <br> Team Jeddah | Team Riyadh| Team Al Khobar
-          </p>
-        </div>
-        <div class="col-md-5 order-md-1">
- 
-        </div>
-
-       
-      </div>
-      <!--Skill Set 8-->
-      <hr class="featurette-divider" />
-      <div class="row featurette">
-        <div class="col-md-7 order-md-1 order-sm-2">
-          <h2 class="featurette-heading" id="executive">
-            Loyalty & Branding
-            <br>
-            <span class="text-muted"> Skill Set 8</span>
-          </h2>
-          <p>
-            <strong>Planning: </strong>
-             Came up with various successful branding ideas that helped on speeding the growth of the company
-            <br> <strong >Implementation: </strong>
-             Spearheaded the overview of the production and managed the costings/ROI
-             <br> <strong>Result: </strong>
-             Achieved the expected ROI, produced 70k+ brand followers 
-            <br> <strong>Sales:</strong> 
-             Boosted by 40% from 2020 to 2021
-             <br> <strong>Branding Merchandise</strong> 
-             Produced branded merchandise that greatly helped the retention and brand loyalty 
-           </p>
-        </div>
-        <div class="col-md-5 order-md-1">
-
-        </div>
-      </div>
-    </div>
-
-
-      <!-- Featurette Start Skill Set 9-->
-
-      <hr class="featurette-divider" />
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2 order-sm-2">
-          <h2 class="featurette-heading" id="journalism">
-            Journalism Background
-            <br>
-            <span class="text-muted"> Skill Set 9</span>
-          </h2>
-          <p>
-            <strong>Skills:</strong>  Feature Writing | Story Telling | Publication designs and layouting
-            <br>
-            Erica grew up writing Feature articles for her highschool's and grade school's publication.
-            <br> She was also winning city competitions for Feature writing and loved it when her article is at the center page of the school's newspaper.
-            <br> Journalism has always been in her heart since childhood.
-          </p>
-        </div>
-        <div class="col-md-5">
-
-        </div>
-      </div>
-       <!--Skill Set 10-->
-       <hr class="featurette-divider" />
-       <div class="row featurette">
-         <div class="col-md-7 order-md-1 order-sm-2">
-           <h2 class="featurette-heading" id="teaching">
-             Teaching Background
-             <br>
-             <span class="text-muted"> Skill Set 10</span>
-           </h2>
-           <p>
-            <br> <strong>Teaching Background</strong>
-            During her geek younger years, Erica has always been fond of sharing her knowledge to others. She was a type A+ of student and former government scholar who did excel both in academics and non-academics curricular activities.  
-            <br> She was a private tutor for children, her classmates and other individuals who asked for her support. In times of needs (when professor was sick, etc.), she used to substitute some of her professors to handle specific topics for class discussions.    
-            <br> <strong>Basic Instructional Designs</strong>
-            <br> Her younger years as temporary substitute for her former professors/teachers had exposed her to lesson plans and exam material preparations. Her former teachers had taught her how to draft lesson plans, craft exam materials and how to handle some specific behavioural learning patterns of their students.
-            <br> <strong>Founding online tutorial schools</strong>
-            <br>This teaching background and her passion in sharing high quality education have helped her understand the fundamentals
-            of instructional designs, which later on became one of her building blocks on successfully establishing her own German school that had a total of 50-100 employees&contractors within 4 yrs of its operation.
-           </p>
-         </div>
-         <div class="col-md-5 order-md-1">
-
-         </div>
-         
-        </div>
-    
         <div class="embed-responsive embed-responsive-4by3">
-          <iframe width="560" height="315" src="https://youtube.com/embed/3FY0z2LHxSw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://youtube.com/embed/3FY0z2LHxSw" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
         </div>
 
-
-            <footer class="bg-dark text-center text-white">
-            
-              <!-- Copyright -->
-              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                 Kittycat.tech© 2022 All rights reserved 
-
-              </div>
-              <!-- Copyright -->
-            </footer>
-
-      </div>
-
- 
     </div>
-    
-  </body>
+
+
+</div>
+
+<footer class="bg-dark text-center text-white">
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        Kittycat.tech© 2022 All rights reserved
+
+    </div>
+    <!-- Copyright -->
+</footer>
+
+</body>
 </html>
