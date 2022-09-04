@@ -1,295 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-      var z = null;m[i].l=1*new Date();
-      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <script type="text/javascript">
+      (function(m, e, t, r, i, k, a) {
+        m[i] = m[i] || function() {
+          (m[i].a = m[i].a || []).push(arguments);
+        };
+        var z = null;
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
+            a);
+      })
+      (window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
 
-      ym(90109424, "init", {
-       clickmap:true,
-       trackLinks:true,
-       accurateTrackBounce:true,
-       webvisor:true,
-       ecommerce:"dataLayer"
-     });
+      ym(90109424, 'init', {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+        ecommerce: 'dataLayer'
+      });
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/90109424" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/90109424" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
     <!-- /Yandex.Metrika counter -->
 
-     <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0XZLBW6ZG"></script>
-     <script>
-        window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-        gtag('config', 'G-T0XZLBW6ZG');
-          </script>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+
+      gtag('config', 'G-T0XZLBW6ZG');
+    </script>
 
     <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
     />
-    <link href="main.css" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet"/>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
     ></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
     <title src="./images/mylovemishka.jpg">Kittycat Tech</title>
-    <link rel="icon" type="image/x-icon" href="/images/Mishka_Icon1.png" />
-  
-  </head>
-  <body>
-    <!--Name-->
+    <link rel="icon" type="image/x-icon" href="/images/Mishka_Icon1.png"/>
 
-    <div>
-      <!-- Nav Container-->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+</head>
+<body>
+<!--Name-->
+
+<div>
+    <!-- Nav Container-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="https://kittycat.tech" target="_blank" >Kittycat Tech</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html" target="_blank" >Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://learn.kittycat.tech" target="_blank"> Cute CheatSheets</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/MIT_project.html" target="_blank" >MIT Project</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/globalTeams.html" target="_blank" >Global Teams</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://medium.com/@kittycat.tech" target="_blank">Blog</a>
-              </li>
-            
-            </ul>
-            <form class="d-flex">
-              <a href="https://www.linkedin.com/in/kittycat/" 
-              target="_blank"  button class="btn btn-outline-warning" >
-                LinkedIn
-              </button> </a>
-            </form>
-            <form class="d-flex">
-              <a href="https://github.com/kittycat-tech" 
-              target="_blank"  button class="btn btn-outline-warning"  >
-                Github meow
-              </button> </a>
-            </form>
-          </div>
+            <a class="navbar-brand" href="https://kittycat.tech" target="_blank">Kittycat Tech</a>
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html" target="_blank">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://learn.kittycat.tech" target="_blank"> Cute CheatSheets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/MIT_project.html" target="_blank">MIT Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/globalTeams.html" target="_blank">Global Teams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://medium.com/@kittycat.tech" target="_blank">Blog</a>
+                    </li>
+
+                </ul>
+
+                <div>
+                    <a href="https://www.linkedin.com/in/kittycat/"
+                       target="_blank" class="btn btn-outline-warning">
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/kittycat-tech"
+                       target="_blank" class="btn btn-outline-warning">
+                        Github meow
+                    </a>
+                </div>
+
+            </div>
         </div>
-      </nav>
-    </div>
-    <!--Banner-->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
+    </nav>
+</div>
+<!--Banner-->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
         <img
-          src="./images/Global Parties 2021 (4800 × 2500 px).png"
-          class="img-fluid"
-          alt="Erica Madebeykin : Investor | Co-founder | Software Developer. ’m Erica Madebeykin, a unique combination of an angel investor, a Co-founder and a software developer."
+                src="./images/Global Parties 2021 (4800 × 2500 px).png"
+                class="img-fluid"
+                alt="Erica Madebeykin : Investor | Co-founder | Software Developer. ’m Erica Madebeykin, a unique combination of an angel investor, a Co-founder and a software developer."
         />
-      </div>
     </div>
+</div>
 
-    <!--endOfBanner-->
+<!--endOfBanner-->
 
-        <!-- Marketing messaging and featurettes
-      ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-    <!--Education-->
-    <!-- START THE Grid CSS  Bootstrap-->
-    <div class="container marketing">
-        <h1> Portfolio Highlights</h1> 
-        <!-- Three columns of text below the carousel -->
-        <div class="row mt-2">
-          <div class="col-lg-4">
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+<!--Education-->
+<!-- START THE Grid CSS  Bootstrap-->
+<div class="container marketing">
+    <h1> Portfolio Highlights</h1>
+    <!-- Three columns of text below the carousel -->
+    <div class="row mt-2">
+        <div class="col-lg-4">
             <img
-              class="img-fluid img-thumbnail"
-              src="./images/EricaLovelove.jpg"
-              alt=""
-              width="140"
-              height="140"
+                    class="img-fluid img-thumbnail"
+                    src="./images/EricaLovelove.jpg"
+                    alt=""
+                    width="140"
+                    height="140"
             />
             <h4>International Community Builder</h4>
             <p>
-              Erica Madebeykin has successfully built worldwide teams in her online German School. 
-            <br> In fact, she financed the global parties (winter party,beach party, pool parties, cruise party, and christmas dinners) of her teams  in the middle east, asia and Europe.
+                Erica Madebeykin has successfully built worldwide teams in her online German School.
+                <br> In fact, she financed the global parties (winter party,beach party, pool parties, cruise party, and
+                christmas dinners) of her teams in the middle east, asia and Europe.
             </p>
-          </div>
-          <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <img
-                class="img-fluid img-thumbnail"
-                src="./images/European-Travels.jpeg"
-                alt="Free-European-Travels"
-                width="140"
-                height="140"
-              />
-              <h4>European Travels</h4>
-              <p>
-                Kittycat also personally funded several European Travels for her team in Europe.
-                Travels include Switzerland Trip, Netherlands Trip, and other trips in Germany. 
-              </p>
-            </div>
-          <!-- /.col-lg-4 -->
-
-            <div class="col-lg-4">
-              <img
-                class="img-fluid img-thumbnail"
-                src="./images/donations-to-frontliners5.png"
-                alt=""
-                width="140"
-                height="140"
-              />
-              <h4> Charity Donations</h4>
-              <p>
-                Erica has funded more than $20,000 worth of donations to the frontliners in several Philippine hospitals.
-                This funding is done as a humanity contribution and profit sharing of the school's income. 
-              </p>
-            </div>
-          <!-- /.col-lg-4 -->
         </div>
-        <!-- /.row -->
-        <hr class="featurette-divider" />
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img
+                    class="img-fluid img-thumbnail"
+                    src="./images/European-Travels.jpeg"
+                    alt="Free-European-Travels"
+                    width="140"
+                    height="140"
+            />
+            <h4>European Travels</h4>
+            <p>
+                Kittycat also personally funded several European Travels for her team in Europe.
+                Travels include Switzerland Trip, Netherlands Trip, and other trips in Germany.
+            </p>
+        </div>
+        <!-- /.col-lg-4 -->
+
+        <div class="col-lg-4">
+            <img
+                    class="img-fluid img-thumbnail"
+                    src="./images/donations-to-frontliners5.png"
+                    alt=""
+                    width="140"
+                    height="140"
+            />
+            <h4> Charity Donations</h4>
+            <p>
+                Erica has funded more than $20,000 worth of donations to the frontliners in several Philippine
+                hospitals.
+                This funding is done as a humanity contribution and profit sharing of the school's income.
+            </p>
+        </div>
+        <!-- /.col-lg-4 -->
+    </div>
+    <!-- /.row -->
+    <hr class="featurette-divider"/>
 
 
-        <!-- 2nd Row
-      ================================================== -->
+    <!-- 2nd Row
+  ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
     <!--Education-->
     <!-- START THE Grid CSS  Bootstrap-->
     <div class="container marketing">
-      <h1>Love & Care</h1> 
-      <!-- Three columns of text below the carousel -->
-      <div class="row mt-2">
-        <div class="col-lg-4">
-          <img
-            class="img-fluid img-thumbnail"
-            src="./images/GermanTeachersAndStaffs.png"
-            alt="care-for-employees"
-            width="140"
-            height="140"
-          />
-          <h4>Employee Awarding Night</h4>
-          <p>
-            She had always loved her employees and treated them like a family.
-          <br>The German Teachers and staffs received Plaques of Recognition and cash.
-          </p>
+        <h1>Love & Care</h1>
+        <!-- Three columns of text below the carousel -->
+        <div class="row mt-2">
+            <div class="col-lg-4">
+                <img
+                        class="img-fluid img-thumbnail"
+                        src="./images/GermanTeachersAndStaffs.png"
+                        alt="care-for-employees"
+                        width="140"
+                        height="140"
+                />
+                <h4>Employee Awarding Night</h4>
+                <p>
+                    She had always loved her employees and treated them like a family.
+                    <br>The German Teachers and staffs received Plaques of Recognition and cash.
+                </p>
+            </div>
+
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img
+                        class="img-fluid img-thumbnail"
+                        src="./images/cake-bday.jpeg"
+                        alt=""
+                        width="140"
+                        height="140"
+                />
+                <h4>Birthday Cakes</h4>
+                <p>
+                    In her online German school, your birthday is the most important day!
+                    Students, staffs and German teachers all around the globe gets a birthday cake!
+                </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img
+                        class="img-fluid img-thumbnail"
+                        src="./images/success-stories.png"
+                        alt=""
+                        width="140"
+                        height="140"
+                />
+                <h4> Hall Of Fame + Success Stories</h4>
+                <p> Read more about our real-life success stories : <a
+                        href="https://blog.germanlanguage.ph/luz-ann-b2-passer-success-story/" target="_blank"> click
+                    here </a>
+                    <br> Successful students were also celebrated and featured in the Hall of Fame.
+
+                </p>
+            </div>
+            <!-- /.col-lg-4 -->
         </div>
+        <!-- /.row -->
+        <hr class="featurette-divider"/>
+        <h2>Global Community Builder</h2>
+        <p>
+            <a class="btn btn-warning" href="https://www.instagram.com/p/CXuH-NZonyd/?hl=en" target="_blank"
+               role="button "
+            > Team Germany- Winter Party &raquo;</a
+            >
+        </p>
+        <p>
+            <a class="btn btn-warning" href="https://www.instagram.com/p/CX_vBt6hjs1/?hl=en" target="_blank"
+               role="button "
+            >Team Saudi-Pool Party(Riyadh)&raquo;</a
+            >
+        </p>
+        <p>
+            <a class="btn btn-warning"
+               href="https://www.facebook.com/GermanLanguage.ph/posts/pfbid02iFioyhnbFm3Zg5m6XsBBcWHrhJSZq8gjaaNV3Gse4WFMDnpL9pW1feAvFy6b5uql"
+               target="_blank" role="button "
+            > Team Europe- School's European Travels &raquo;</a
+            >
+        </p>
+        <p>
+            <a class="btn btn-warning" href="https://www.instagram.com/p/CXWVLxIoy1C/?hl=en" target="_blank"
+               role="button "
+            >Team Saudi-Pool Party(Jeddah)&raquo;</a
+            >
+        </p>
+        <p>
+            <a class="btn btn-warning" href="https://www.instagram.com/p/CXJC92EIc1O/?hl=en" target="_blank"
+               role="button "
+            >Team Saudi-Pool Party(AK)&raquo;</a
+            >
+        </p>
+        <p>
+            <a class="btn btn-warning" href="https://www.instagram.com/p/CXTYJn5oK9g/?hl=en" target="_blank"
+               role="button "
+            >Team Philippines- Beach Party&raquo;</a
+            >
+        </p>
 
-        <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img
-              class="img-fluid img-thumbnail"
-              src="./images/cake-bday.jpeg"
-              alt=""
-              width="140"
-              height="140"
-            />
-            <h4>Birthday Cakes</h4>
-            <p>
-              In her online German school, your birthday is the most important day!
-              Students, staffs and German teachers all around the globe gets a birthday cake!
-            </p>
-          </div>
-        <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img
-              class="img-fluid img-thumbnail"
-              src="./images/success-stories.png"
-              alt=""
-              width="140"
-              height="140"
-            />
-            <h4> Hall Of Fame + Success Stories</h4>
-            <p> Read more about our real-life success stories : <a href="https://blog.germanlanguage.ph/luz-ann-b2-passer-success-story/" target="_blank" > click here </a>
-              <br> Successful students were also celebrated and featured in the Hall of Fame.
-
-            </p>
-          </div>
-        <!-- /.col-lg-4 -->
-      </div>
-      <!-- /.row -->
-      <hr class="featurette-divider" />
-      <h2>Global Community Builder</h2>
-      <p>
-        <a class="btn btn-warning" href="https://www.instagram.com/p/CXuH-NZonyd/?hl=en" target="_blank" role="button "
-          > Team Germany- Winter Party &raquo;</a
-        >
-      </p>
-      <p>
-        <a class="btn btn-warning" href="https://www.instagram.com/p/CX_vBt6hjs1/?hl=en" target="_blank" role="button "
-          >Team Saudi-Pool Party(Riyadh)&raquo;</a
-        >
-      </p>
-      <p>
-        <a class="btn btn-warning" href="https://www.facebook.com/GermanLanguage.ph/posts/pfbid02iFioyhnbFm3Zg5m6XsBBcWHrhJSZq8gjaaNV3Gse4WFMDnpL9pW1feAvFy6b5uql" target="_blank"  role="button "
-          > Team Europe- School's European Travels &raquo;</a
-        >
-      </p>
-      <p>
-        <a class="btn btn-warning" href="https://www.instagram.com/p/CXWVLxIoy1C/?hl=en" target="_blank" role="button "
-          >Team Saudi-Pool Party(Jeddah)&raquo;</a
-        >
-      </p>
-      <p>
-        <a class="btn btn-warning" href="https://www.instagram.com/p/CXJC92EIc1O/?hl=en" target="_blank" role="button "
-          >Team Saudi-Pool Party(AK)&raquo;</a
-        >
-      </p>
-      <p>
-        <a class="btn btn-warning" href="https://www.instagram.com/p/CXTYJn5oK9g/?hl=en" target="_blank" role="button "
-          >Team Philippines- Beach Party&raquo;</a
-        >
-      </p>
-
-      <p>
-        <a class="btn btn-warning" href="https://www.facebook.com/GermanLanguage.ph/posts/pfbid0mv5ehRjhsd1itCv62J51Rs6Tn6soPqjcnH6YtNSTgqfHNd1ZWKHEFm653feNbQi9l" target="_blank" role="button "
-          >Team UAE- Cruise Party&raquo;</a
-        >
-      </p>
-      <p>
-        <a class="btn btn-warning" href="https://www.facebook.com/GermanLanguage.ph/posts/pfbid02xeuTN26Ew8qzfKzvaYgmB5LFsHWgGqkyUMLjWYfRw9qnxsYE3zmvr4bAXTSa4gJMl" target="_blank" role="button "
-          >Team Kuwait-Christmas Dinner&raquo;</a
-        >
-      </p>
-      <p>
-        <a class="btn btn-warning" href="https://www.instagram.com/p/CXa8OvRJq_z/?hl=en" target="_blank" role="button "
-          >Team Qatar-Christmas Dinner&raquo;</a
-        >
-      </p>
-      <p>
-        <a class="btn btn-warning" href="https://www.instagram.com/p/CXTXitaoV3G/?hl=en" target="_blank" role="button "
-          >former Employees Awarding Night&raquo;</a
-        >
-      </p>
+        <p>
+            <a class="btn btn-warning"
+               href="https://www.facebook.com/GermanLanguage.ph/posts/pfbid0mv5ehRjhsd1itCv62J51Rs6Tn6soPqjcnH6YtNSTgqfHNd1ZWKHEFm653feNbQi9l"
+               target="_blank" role="button "
+            >Team UAE- Cruise Party&raquo;</a
+            >
+        </p>
+        <p>
+            <a class="btn btn-warning"
+               href="https://www.facebook.com/GermanLanguage.ph/posts/pfbid02xeuTN26Ew8qzfKzvaYgmB5LFsHWgGqkyUMLjWYfRw9qnxsYE3zmvr4bAXTSa4gJMl"
+               target="_blank" role="button "
+            >Team Kuwait-Christmas Dinner&raquo;</a
+            >
+        </p>
+        <p>
+            <a class="btn btn-warning" href="https://www.instagram.com/p/CXa8OvRJq_z/?hl=en" target="_blank"
+               role="button "
+            >Team Qatar-Christmas Dinner&raquo;</a
+            >
+        </p>
+        <p>
+            <a class="btn btn-warning" href="https://www.instagram.com/p/CXTXitaoV3G/?hl=en" target="_blank"
+               role="button "
+            >former Employees Awarding Night&raquo;</a
+            >
+        </p>
