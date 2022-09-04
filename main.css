@@ -1,40 +1,44 @@
-
 /*buttons should be pink!*/
-.btn{
+.btn {
     background-color: #FACDE6;
-    color:black;
+    color: black;
     margin-right: 10px;
     margin-bottom: 5px;
     border-radius: 9px;
 }
 
 /*--Main_headers in violet*/
- 
-h1{
+
+h1 {
     color: #69467f;
 }
+
 h4 {
     color: #805999;
 }
 
-h2{
+h2 {
     color: #805999;
 }
 
-.featurette-heading{
+.featurette-heading {
     background-color: #FACDE6;
     padding: 9px;
     border-radius: 9px;
 }
 
-.carousel-inner{
+.carousel-inner {
     max-height: 280px;
 }
 
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
-    }
+}
+
+.custom-row-gap {
+    row-gap: 12px;
+}
 
 
 /* Grid layout codes are in the html as per bootstrap
